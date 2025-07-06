@@ -2,32 +2,32 @@ name: React CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ⬇️ Checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🟢 Set up Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: 📦 Install Dependencies
+      - name: Install Dependencies
         run: |
           npm install
 
-      - name: 🏗️ Build React App
+      - name: Build React App
         run: |
           npm run build
 
-      - name: ✅ Run Tests
+      - name: Run Tests
         run: |
           npm test -- --watchAll=false
         # If you're using a test framework (e.g., Jest). Remove if not needed.
