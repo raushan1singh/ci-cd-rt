@@ -1,0 +1,201 @@
+.faq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.faq .main {
+  width: 500px;
+  display: block;
+}
+.faq .main .faqbox {
+  background-color: #ccc;
+  padding: 10px;
+  margin: 15px 0px;
+}
+.faq .main .faqbox h4 {
+  cursor: pointer;
+}
+.faq .main .faqbox p {
+  display: none;
+}
+.faq .main .faqbox.active p {
+  display: block;
+}
+
+.test_list {
+  list-style-type: square;
+}
+.test_list li {
+  margin-top: 10px;
+}
+.test_list .test_btn {
+  background-color: #ccc;
+  margin-left: 12px;
+  padding: 2px 5px;
+}
+
+.quiz {
+  margin-left: 20px;
+}
+.quiz .rbtn {
+  margin-top: 8px;
+}
+.quiz button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.chatDec {
+  color: red;
+}
+
+.etracker_main {
+  width: 400px;
+  margin: 0 auto;
+  background: #e6f3ff;
+  padding: 50px;
+}
+.etracker_main .your_balance {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.etracker_main .your_balance p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.etracker_main .income_expense {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: #fff;
+  margin-top: 32px;
+}
+.etracker_main .income_expense h4 {
+  font-size: 18px;
+}
+.etracker_main .income_expense .income_expense_left {
+  padding-right: 50px;
+  border-right: 1px solid #ccc;
+  margin-right: 50px;
+}
+.etracker_main .etrack_exp_list {
+  margin-top: 32px;
+}
+.etracker_main .etrack_exp_list p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.etracker_main .etrack_exp_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 5px 10px;
+}
+.etracker_main .add_new_transaction {
+  margin-top: 29px;
+}
+.etracker_main .add_new_transaction p {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.etracker_main .add_new_transaction input {
+  width: 100%;
+}
+.etracker_main .add_new_transaction .etrack_btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.etracker_main .add_new_transaction .etrack_btn button {
+  padding: 5px 40px;
+  border: 0px;
+  background: #9c9cb7;
+  color: #fff;
+}
+
+.tr_delete {
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.main .textbox .allfm {
+  display: ruby;
+}
+.main .textbox .allfm button {
+  margin-bottom: 5px;
+}
+.main .taskManager {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main .taskManager .todo, .main .taskManager .done, .main .taskManager .doing {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+  color: #fff;
+  background-color: #07b151;
+  font-weight: 700;
+}
+.main .taskManager .todo ol, .main .taskManager .done ol, .main .taskManager .doing ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main .taskManager .todo ol li, .main .taskManager .done ol li, .main .taskManager .doing ol li {
+  text-align: left;
+  background-color: #ccc;
+  margin: 10px 10px;
+  color: #000;
+  font-size: 14px;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .taskManager .todo ol li i, .main .taskManager .done ol li i, .main .taskManager .doing ol li i {
+  cursor: pointer;
+}
+.main .taskManager .doing {
+  background-color: #2fbbb3;
+}
+.main .taskManager .done {
+  background-color: #8cc640;
+}
+
+.drag_mainbox {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.drag_mainbox .left, .drag_mainbox .right {
+  min-width: 200px;
+  display: block;
+  border: 1px solid #ccc;
+  min-height: 200px;
+}
+.drag_mainbox .left ul, .drag_mainbox .right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.drag_mainbox .left ul li, .drag_mainbox .right ul li {
+  background-color: #2fbbb3;
+  margin: 10px 0px;
+  padding: 4px 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=app.css.map */
