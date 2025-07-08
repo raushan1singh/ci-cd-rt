@@ -21,6 +21,4 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
-      - name: Build Project
-        run: npm run build
+        working-directory: ci-cd-rt
