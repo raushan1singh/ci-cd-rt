@@ -19,8 +19,13 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Clean Install Dependencies
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
+
+      - name: Fix react-scripts permission
+        run: chmod +x node_modules/.bin/react-scripts
 
       - name: Build Project
         run: npm run build
